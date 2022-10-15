@@ -18,11 +18,10 @@ function countCats(matrix) {
   let count = 0;
   matrix.forEach((item) => {
       let key = item.filter((ears) => {
-          if (ears === '^^') {
-              count++;
-          } else return;
+          if (ears === '^^') count++;
       })
   })
+  return count;
 }
 
 module.exports = {
