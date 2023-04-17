@@ -17,7 +17,7 @@ const { NotImplementedError } = require('../extensions/index.js');
 function countCats(matrix) {
   let count = 0;
   matrix.forEach((item) => {
-      let key = item.filter((ears) => {
+      item.filter((ears) => {
           if (ears === '^^') count++;
       })
   })
